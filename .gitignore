@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+*.pkl
+*.joblib
+*.csv
+*.env
+env/
+entorno_ufv_fastapi/
+entorno_test/
+.vscode/
+Dockerfile~
+*.log

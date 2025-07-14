@@ -1,0 +1,17 @@
+# Ignora el entorno virtual local
+venv/
+
+# Ignorar entorno virtual
+entorno_ufv_fastapi/
+info/
+pruebas/
+models/
+entorno_test/
+
+# Archivos temporales y compilados
+__pycache__/
+*.pyc
+
+# Archivos de configuración locales
+.env
+*.log
