@@ -4,7 +4,7 @@ Machine learning project to predict the **average grade** of university students
 
 ---
 
-## Estructura del proyecto
+## Folder structure
 
 prediccion_nota_media/ ├── entorno/ # Entorno virtual local ├── main.py # API REST (FastAPI) ├── notebook.ipynb # Notebook con exploración y entrenamiento ├── modelo_nota_media.joblib # Modelo guardado ├── features_modelo.joblib # Variables usadas por el modelo ├── requirements.txt # Dependencias exactas del proyecto ├── README.md # Documentación del proyecto
 
