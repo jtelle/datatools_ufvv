@@ -1,6 +1,6 @@
-## Predicción de Nota Media – API con FastAPI
+## College average grade prediction – API with FastAPI
 
-Proyecto de Machine Learning para predecir la **nota media** de estudiantes universitarios. Utiliza un modelo entrenado con `scikit-learn` y está desplegado mediante una API REST construida con **FastAPI**.
+Machine learning project to predict the **average grade** of university students. It uses a model trained with `scikit-learn` and is deployed via a REST API built with **FastAPI**.
 
 ---
 
@@ -11,9 +11,7 @@ prediccion_nota_media/ ├── entorno/ # Entorno virtual local ├── main
 ![[estructura.png]]
 ---
 
-## Cómo ejecutar el proyecto
-
-### 1. Clonar el repositorio
+### 1. Clone the repository
 
 ```bash
 git clone https://github.com/tuusuario/prediccion_nota_media.git
@@ -24,12 +22,12 @@ cd prediccion_nota_media
 ```
 
 
-### 2. Crear entorno virtual dentro del proyecto
+### 2. Create virtual env inside the project folder
 
 ```bash
 python -m venv entorno_ufv_fastapi
 ```
-### 3. Activar el entorno
+### 3. Activate env
 Windows:
 
 ```
@@ -37,12 +35,12 @@ entorno_ufv_fastapi\Scripts\activate
 ```
 
 
-### 4. Instalar dependencias
+### 4. Install dependencies
 ```bash
 pip install -r requirements.txt
 ```
 
-### Lanzar la API
+### Launch API
 ```bash
 uvicorn main:app --reload
 
@@ -52,13 +50,13 @@ python -m uvicorn main:app --reload
 ```
 Accede a la documentación interactiva: http://localhost:8000/docs
 
-###  Uso del endpoint /predecir
+###  Use endpoint /predecir
 
 ```bash
 POST /predecir
 ```
 
-### Ejemplo de entrada:
+### Entry example:
 
 ```bash
 
@@ -73,7 +71,7 @@ json
 }
 ```
 
-### Respuesta esperada:
+### Expected outcome:
 ```bash
 
 json
@@ -81,7 +79,7 @@ json
   "Nota Media Estimada": 7.64
 }
 ```
-### Con streamlit, lanzar streamlit
+### Launch streamlit
 ```bash
 streamlit run interfaz_dobletab.py
 
@@ -91,7 +89,7 @@ python -m streamlit run interfaz_dobletab.py
 o 
 python -m streamlit run interfaz_pipeline.py
 ```
-### Requisitos técnicos
+### Requirements
 - Python 3.10+
 
 - FastAPI
