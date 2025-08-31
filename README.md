@@ -106,5 +106,3 @@ python -m streamlit run interfaz_pipeline.py
 
 - Streamlit
 
-Autor
-José Telle
