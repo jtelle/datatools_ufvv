@@ -63,18 +63,17 @@ footer {
 st.image("assets/Logo_UFV.jpg", width=650)
 
 
-
 # Ruta relativa segura al dataset
 base_path = Path(__file__).resolve().parent.parent
 csv_path = base_path / "data" / "dataset_estudiantes.csv"
 
-#prueba confirmatoria de path
-#print("Ruta al CSV:", csv_path)
-#print("¿Existe el archivo?:", csv_path.exists())
+# prueba confirmatoria de path
+# print("Ruta al CSV:", csv_path)
+# print("¿Existe el archivo?:", csv_path.exists())
 
 # Mostrar pruebas en Streamlit
-#st.write("Ruta al CSV:", csv_path)
-#st.write("¿Existe el archivo?:", csv_path.exists())
+# st.write("Ruta al CSV:", csv_path)
+# st.write("¿Existe el archivo?:", csv_path.exists())
 
 # Cargar el dataset
 df = pd.read_csv(csv_path)
@@ -127,8 +126,8 @@ with tab1:
         enviado = st.form_submit_button("Estimar Nota Media")
 
     if enviado:
-        #url = "http://localhost:8000/predecir"   para no docker
-        url = "http://fastapi:8000/predecir"   #para docker
+        url = "http://localhost:8000/predecir"  # para no docker
+        # url = "http://fastapi:8000/predecir"   #para docker
 
         datos = {
             "Edad": edad,

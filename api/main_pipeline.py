@@ -14,6 +14,11 @@ pipeline = joblib.load(model_path)
 app = FastAPI(title="Predicción de Nota Media", version="1.0")
 
 
+@app.get("/")
+def read_root():
+    return {"mensaje": "Bienvenido a la API de predicción UFV 🚀"}
+
+
 class Estudiante(BaseModel):
     Edad: int
     Asignaturas: int

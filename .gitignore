@@ -10,3 +10,5 @@ entorno_test/
 .vscode/
 Dockerfile~
 *.log
+venv/
+instrucc.md

@@ -31,7 +31,7 @@ python -m venv entorno_ufv_fastapi
 Windows:
 
 ```
-entorno_ufv_fastapi\Scripts\activate
+venv\Scripts\activate  
 ```
 
 
